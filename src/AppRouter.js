@@ -11,7 +11,7 @@ class appExt extends AppBase {
 
     BuildAPIs() {
         this.app.get('/', this.mw.BaseURLs);
-        //this.app.get('/api', this.nlp.AskToServer);
+        this.app.get('/api', this.mw.AskToServer);
         //this.app.get('/:q', this.nlp.AskToServer);
         //this.app.get('/d', this.mw.CheckTime);
     }

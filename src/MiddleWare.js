@@ -29,7 +29,7 @@ class MiddleWare
 
     AskToServer(req, res) {
         var text = req.query.q;
-        res.send(result.toString())
+        res.send(text.toString())
 
     }
 }
